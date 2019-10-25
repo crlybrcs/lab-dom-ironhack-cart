@@ -1,14 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <script type="text/javascript" src="./js/index.js"></script>
-  <title>Ironhack cart</title>
-</head>
-<body>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script type="text/javascript" src="./js/index.js"></script>
+    <title>Ironhack cart</title>
+  </head>
+  <body>
+    <h2>
+      Ironhack Merchandising Shop
+    </h2>
+    <div class="products-container">
+      <div class="product-wrapper">
+        <div><span class="name">IronBubble-head</span></div>
+        <div><span class="price">$25.10</span></div>
+        <div>
+          <label>QTY</label><input class="quantity" type="number" value="5" />
+        </div>
+        <div><span class="total-price">$0.00</span></div>
+        <div><button class="btn btn-delete">Delete</button></div>
+      </div>
+
+      <div class="product-wrapper">
+        <div><span class="name">Ironshirt</span></div>
+        <div><span class="price">$15.00</span></div>
+        <div>
+          <label>QTY</label><input class="quantity" type="number" value="0" />
+        </div>
+        <div><span class="total-price">$0.00</span></div>
+        <div><button class="btn btn-delete">Delete</button></div>
+      </div>
+    </div>
+    <div class="price-button-wrapper">
+      <button id="calc-prices-button" class="btn btn-success">
+        Calculate Prices
+      </button>
+    </div>
+    <h2 id="total-price">Total Price: $0</h2>
+  </body>
 </html>
